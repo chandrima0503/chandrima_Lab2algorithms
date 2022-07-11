@@ -1,6 +1,8 @@
 package com.greatlearning.denomination;
 
 class NoteCount {
+
+	//method that counts the least number of denominations required to pay the amount.
 	public void count_denomination(int n, int[] denominations, int amount) {
 		int left = 0;
 		int right = n-1;

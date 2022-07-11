@@ -1,6 +1,8 @@
 package com.greatlearning.denomination;
 
 class MergeSort {
+
+	//Method to sort the denominations array using mergesort
 	public void sort_denomination(int[] denominations, int left, int right) {
 		if(left < right) {
 			int middle = (left+right)/2;
@@ -9,8 +11,10 @@ class MergeSort {
 			merge(denominations, left, middle, right);
 		}
 	}
-	 public void merge(int arr[], int l, int m, int r)
-	 {
+
+	//Method that recursively implements mergesort
+	public void merge(int arr[], int l, int m, int r)
+	{
 	        int n1 = m - l + 1;
 	        int n2 = r - m;
 	 
